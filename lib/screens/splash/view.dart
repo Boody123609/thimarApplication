@@ -3,7 +3,8 @@ import 'dart:async';
 import 'package:animate_do/animate_do.dart';
 import 'package:flutter/material.dart';
 
-import '../login_in_screen/view.dart';
+import '../auth/login_in/view.dart';
+
 class SplashScreen extends StatefulWidget {
   const SplashScreen({Key? key}) : super(key: key);
 
@@ -16,7 +17,7 @@ class _SplashScreenState extends State<SplashScreen> {
   void initState() {
     
     super.initState();
-    Timer(Duration(seconds: 3),(){
+    Timer(Duration(seconds: 5),(){
       Navigator.pushAndRemoveUntil(context, MaterialPageRoute(builder: (context)=>LoginPage()), (route) => false);
 
     });
